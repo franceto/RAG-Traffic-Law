@@ -13,3 +13,5 @@ logs/*.txt
 
 .DS_Store
 Thumbs.db
+
+*.zip
