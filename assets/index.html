@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traffic Law RAG</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <div>
+        <h1>Hỏi đáp luật giao thông Việt Nam</h1>
+        <p>Nhập câu hỏi, hệ thống sẽ trả lời dựa trên căn cứ pháp lý đã có.</p>
+      </div>
+
+      <div class="header-actions">
+        <button id="openSystemBtn" class="ghost-btn">Hệ thống</button>
+        <button id="clearBtn" class="ghost-btn">Xóa chat</button>
+      </div>
+    </header>
+
+    <section class="examples">
+      <button class="example">Xe máy đi vào đường cao tốc bị phạt bao nhiêu?</button>
+      <button class="example">Ô tô vượt đèn đỏ bị phạt bao nhiêu?</button>
+      <button class="example">Người đi bộ đi vào đường cao tốc bị phạt bao nhiêu?</button>
+      <button class="example">Vượt đèn xanh có bị phạt không?</button>
+    </section>
+
+    <section id="chat" class="chat">
+      <div class="message bot">
+        Xin chào. Bạn hãy nhập câu hỏi về xử phạt giao thông.
+      </div>
+    </section>
+
+    <form id="askForm" class="ask-form">
+      <input id="question" autocomplete="off" placeholder="Nhập câu hỏi..." />
+      <button id="sendBtn" type="submit">Gửi</button>
+    </form>
+  </main>
+
+  <aside id="systemDrawer" class="system-drawer">
+    <div class="drawer-head">
+      <div>
+        <h2>Thông tin hệ thống</h2>
+        <p>Pipeline RAG đang dùng trong ứng dụng</p>
+      </div>
+      <button id="closeSystemBtn" class="icon-btn">✕</button>
+    </div>
+  
+    <div class="drawer-hero">
+      <div class="hero-logo">
+        <svg viewBox="0 0 64 64">
+          <path d="M32 6l22 10v14c0 14.5-9 24.8-22 28C19 54.8 10 44.5 10 30V16L32 6z" fill="#155EEF"/>
+          <path d="M23 29h18v5H23zM19 39h26v5H19zM29 18h6v31h-6z" fill="white"/>
+        </svg>
+      </div>
+      <div>
+        <h3>Traffic Law RAG</h3>
+        <p>Hỏi đáp xử phạt giao thông Việt Nam dựa trên căn cứ pháp lý đã nạp.</p>
+      </div>
+    </div>
+  
+    <div class="system-stack">
+      <div class="sys-card">
+        <div class="sys-icon blue">
+          <svg viewBox="0 0 24 24">
+            <path d="M6 3h9l4 4v14H6z" fill="none" stroke="currentColor" stroke-width="2"/>
+            <path d="M14 3v5h5M9 13h6M9 17h6" fill="none" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Tài liệu pháp lý</h3>
+          <p>Nghị định 168/2024/NĐ-CP</p>
+        </div>
+        <span class="sys-badge on">Đang dùng</span>
+      </div>
+  
+      <div class="sys-card">
+        <div class="sys-icon green">
+          <svg viewBox="0 0 24 24">
+            <path d="M4 6c0-1.7 3.6-3 8-3s8 1.3 8 3-3.6 3-8 3-8-1.3-8-3z" fill="none" stroke="currentColor" stroke-width="2"/>
+            <path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6" fill="none" stroke="currentColor" stroke-width="2"/>
+            <path d="M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6" fill="none" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Index / Retrieval</h3>
+          <p>Exact Search + BM25 + Mapping Dictionary + Evidence Filter</p>
+        </div>
+        <span class="sys-badge on">Đang dùng</span>
+      </div>
+  
+      <div class="sys-card">
+        <div class="sys-icon purple">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z" fill="none" stroke="currentColor" stroke-width="2"/>
+            <path d="M12 12l8-4.5M12 12v9M12 12L4 7.5" fill="none" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </div>
+        <div>
+          <h3>GraphRAG</h3>
+          <p>GraphRAG nhẹ theo concept pháp lý</p>
+        </div>
+        <span class="sys-badge on">Đang dùng</span>
+      </div>
+  
+      <div class="sys-card">
+        <div class="sys-icon orange">
+          <svg viewBox="0 0 24 24">
+            <path d="M5 7h14M5 12h14M5 17h14" fill="none" stroke="currentColor" stroke-width="2"/>
+            <circle cx="8" cy="7" r="2" fill="currentColor"/>
+            <circle cx="16" cy="12" r="2" fill="currentColor"/>
+            <circle cx="11" cy="17" r="2" fill="currentColor"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Vector Database</h3>
+          <p>Chưa bật trong bản hiện tại</p>
+        </div>
+        <span class="sys-badge off">Chưa dùng</span>
+      </div>
+  
+      <div class="sys-card">
+        <div class="sys-icon pink">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 3a4 4 0 0 1 4 4v1h1a4 4 0 0 1 0 8h-1v1a4 4 0 0 1-8 0v-1H7a4 4 0 0 1 0-8h1V7a4 4 0 0 1 4-4z" fill="none" stroke="currentColor" stroke-width="2"/>
+            <path d="M9 12h6M12 9v6" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Embedding</h3>
+          <p>Chưa kích hoạt Dense Retrieval</p>
+        </div>
+        <span class="sys-badge off">Chưa dùng</span>
+      </div>
+  
+      <div class="sys-card">
+        <div class="sys-icon cyan">
+          <svg viewBox="0 0 24 24">
+            <path d="M4 7h16v10H4z" fill="none" stroke="currentColor" stroke-width="2"/>
+            <path d="M8 21h8M12 17v4M8 11h.01M12 11h.01M16 11h.01" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Backend</h3>
+          <p>FastAPI + Python RAG Pipeline</p>
+        </div>
+        <span class="sys-badge on">Đang dùng</span>
+      </div>
+  
+      <div class="sys-card">
+        <div class="sys-icon gray">
+          <svg viewBox="0 0 24 24">
+            <path d="M4 5h16v14H4z" fill="none" stroke="currentColor" stroke-width="2"/>
+            <path d="M8 9l-2 3 2 3M16 9l2 3-2 3M13 8l-2 8" fill="none" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Giao diện</h3>
+          <p>HTML + CSS + JavaScript</p>
+        </div>
+        <span class="sys-badge on">Đang dùng</span>
+      </div>
+    </div>
+  </aside>
+
+  <div id="drawerOverlay" class="drawer-overlay"></div>
+
+  <script src="/assets/app.js"></script>
+</body>
+</html>

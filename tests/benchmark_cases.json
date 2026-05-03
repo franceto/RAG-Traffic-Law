@@ -1,0 +1,123 @@
+﻿[
+  {
+    "id": "copy_car_001",
+    "question": "Xe ô tô chở người trên buồng lái quá số lượng quy định phạt bao nhiêu",
+    "expected_citation": "168/2024/NĐ-CP - Điều 6 - Khoản 2 - Điểm b",
+    "expected_fine": "Phạt tiền từ 600.000 đồng đến 800.000 đồng"
+  },
+  {
+    "id": "copy_car_002",
+    "question": "Xe ô tô chuyển làn đường không đúng nơi cho phép phạt bao nhiêu",
+    "expected_citation": "168/2024/NĐ-CP - Điều 6 - Khoản 2 - Điểm a",
+    "expected_fine": "Phạt tiền từ 600.000 đồng đến 800.000 đồng"
+  },
+  {
+    "id": "copy_car_003",
+    "question": "Xe ô tô không tuân thủ quy định nhường đường tại nơi đường bộ giao nhau phạt bao nhiêu",
+    "expected_citation": "168/2024/NĐ-CP - Điều 6 - Khoản 2 - Điểm c",
+    "expected_fine": "Phạt tiền từ 600.000 đồng đến 800.000 đồng"
+  },
+  {
+    "id": "copy_car_004",
+    "question": "Xe ô tô sử dụng còi từ 22 giờ đến 5 giờ trong khu đông dân cư phạt bao nhiêu",
+    "expected_citation": "168/2024/NĐ-CP - Điều 6 - Khoản 1 - Điểm đ",
+    "expected_fine": "Phạt tiền từ 400.000 đồng đến 600.000 đồng"
+  },
+  {
+    "id": "copy_car_005",
+    "question": "Xe ô tô khi ra vào vị trí dừng xe đỗ xe không có tín hiệu báo cho phương tiện khác biết phạt bao nhiêu",
+    "expected_citation": "168/2024/NĐ-CP - Điều 6 - Khoản 1 - Điểm b",
+    "expected_fine": "Phạt tiền từ 400.000 đồng đến 600.000 đồng"
+  },
+  {
+    "id": "copy_car_006",
+    "question": "Xe ô tô không báo hiệu bằng đèn khẩn cấp khi gặp sự cố kỹ thuật phải đỗ xe chiếm một phần đường xe chạy phạt bao nhiêu",
+    "expected_citation": "168/2024/NĐ-CP - Điều 6 - Khoản 1 - Điểm c",
+    "expected_fine": "Phạt tiền từ 400.000 đồng đến 600.000 đồng"
+  },
+  {
+    "id": "copy_car_007",
+    "question": "Xe ô tô sử dụng còi trong thời gian từ 22 giờ ngày hôm trước đến 05 giờ ngày hôm sau trong khu đông dân cư phạt bao nhiêu",
+    "expected_citation": "168/2024/NĐ-CP - Điều 6 - Khoản 1 - Điểm đ",
+    "expected_fine": "Phạt tiền từ 400.000 đồng đến 600.000 đồng"
+  },
+  {
+    "id": "copy_car_008",
+    "question": "Xe ô tô chạy quá tốc độ quy định từ 05 km/h đến dưới 10 km/h phạt bao nhiêu",
+    "expected_citation": "168/2024/NĐ-CP - Điều 6 - Khoản 3 - Điểm a",
+    "expected_fine": "Phạt tiền từ 800.000 đồng đến 1.000.000 đồng"
+  },
+  {
+    "id": "copy_car_009",
+    "question": "Xe ô tô sử dụng còi rú ga liên tục phạt bao nhiêu",
+    "expected_citation": "168/2024/NĐ-CP - Điều 6 - Khoản 3 - Điểm b",
+    "expected_fine": "Phạt tiền từ 800.000 đồng đến 1.000.000 đồng"
+  },
+  {
+    "id": "copy_car_010",
+    "question": "Xe ô tô chuyển hướng không quan sát hoặc không có tín hiệu báo hướng rẽ phạt bao nhiêu",
+    "expected_citation": "168/2024/NĐ-CP - Điều 6 - Khoản 3 - Điểm c",
+    "expected_fine": "Phạt tiền từ 800.000 đồng đến 1.000.000 đồng"
+  },
+  {
+    "id": "copy_car_011",
+    "question": "Xe ô tô dừng xe đỗ xe tại nơi đường bộ giao nhau hoặc trong phạm vi 05 mét tính từ mép đường giao nhau phạt bao nhiêu",
+    "expected_citation": "168/2024/NĐ-CP - Điều 6 - Khoản 3 - Điểm đ",
+    "expected_fine": "Phạt tiền từ 800.000 đồng đến 1.000.000 đồng"
+  },
+  {
+    "id": "copy_car_012",
+    "question": "Xe ô tô không sử dụng hoặc sử dụng không đủ đèn chiếu sáng trong thời gian từ 18 giờ đến 06 giờ phạt bao nhiêu",
+    "expected_citation": "168/2024/NĐ-CP - Điều 6 - Khoản 3 - Điểm g",
+    "expected_fine": "Phạt tiền từ 800.000 đồng đến 1.000.000 đồng"
+  },
+  {
+    "id": "copy_car_013",
+    "question": "Xe ô tô không thắt dây đai an toàn khi điều khiển xe chạy trên đường phạt bao nhiêu",
+    "expected_citation": "168/2024/NĐ-CP - Điều 6 - Khoản 3 - Điểm k",
+    "expected_fine": "Phạt tiền từ 800.000 đồng đến 1.000.000 đồng"
+  },
+  {
+    "id": "copy_car_014",
+    "question": "Xe ô tô chở người trên xe ô tô không thắt dây đai an toàn khi xe đang chạy phạt bao nhiêu",
+    "expected_citation": "168/2024/NĐ-CP - Điều 6 - Khoản 3 - Điểm l",
+    "expected_fine": "Phạt tiền từ 800.000 đồng đến 1.000.000 đồng"
+  },
+  {
+    "id": "copy_car_015",
+    "question": "Xe ô tô chạy trong hầm đường bộ không sử dụng đèn chiếu sáng gần phạt bao nhiêu",
+    "expected_citation": "168/2024/NĐ-CP - Điều 6 - Khoản 3 - Điểm n",
+    "expected_fine": "Phạt tiền từ 800.000 đồng đến 1.000.000 đồng"
+  },
+  {
+    "id": "casual_motorbike_001",
+    "question": "Nếu va chạm tai nạn giao thông giữa 2 xe máy mà xe máy 1 chạy đi trốn thì phạt bao nhiêu",
+    "expected_citation": "168/2024/NĐ-CP - Điều 7 - Khoản 9 - Điểm c",
+    "expected_fine": "Phạt tiền từ 8.000.000 đồng đến 10.000.000 đồng"
+  },
+  {
+    "id": "casual_motorbike_002",
+    "question": "Xe máy chuyển làn đường không đúng nơi cho phép bị phạt bao nhiêu",
+    "expected_citation": "168/2024/NĐ-CP - Điều 7 - Khoản 1 - Điểm e",
+    "expected_fine": "Phạt tiền từ 200.000 đồng đến 400.000 đồng"
+  },
+  {
+    "id": "casual_motorbike_003",
+    "question": "Xe máy không nhường đường tại nơi đường bộ giao nhau phạt bao nhiêu",
+    "expected_citation": "168/2024/NĐ-CP - Điều 7 - Khoản 1 - Điểm đ",
+    "expected_fine": "Phạt tiền từ 200.000 đồng đến 400.000 đồng"
+  },
+  {
+    "id": "casual_motorbike_004",
+    "question": "Xe máy bấm còi từ 22 giờ đến 5 giờ sáng trong khu đông dân cư phạt bao nhiêu",
+    "expected_citation": "168/2024/NĐ-CP - Điều 7 - Khoản 1 - Điểm i",
+    "expected_fine": "Phạt tiền từ 200.000 đồng đến 400.000 đồng"
+  },
+  {
+    "id": "trap_001",
+    "question": "Xe máy vượt đèn xanh có bị phạt không",
+    "expected_citation": "",
+    "expected_fine": "",
+    "expected_retrieved_count": 0
+  }
+]
