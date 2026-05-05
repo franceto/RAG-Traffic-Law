@@ -37,7 +37,7 @@ Hệ thống sẽ:
 - chuyển câu hỏi đời thường sang hướng truy xuất pháp lý,
 - tìm điều/khoản/điểm phù hợp,
 - trả lời bằng ngôn ngữ dễ hiểu,
-- kèm căn cứ pháp lý khi có dữ liệu phù hợp.
+- kèm căn cứ pháp lý khi có dữ liệu phù hợp. 
 
 Điểm quan trọng của project là **ưu tiên an toàn pháp lý**:
 
